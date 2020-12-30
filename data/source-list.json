@@ -1,0 +1,20 @@
+[
+  {
+    "type": "rss",
+    "name": "Meduza.io",
+    "url": "https://meduza.io/rss/all",
+    "logo": "https://meduza.io/image/attachments/images/005/208/897/original/V9OZX27dSUO80e_VZcTS6Q.png"
+  },
+  {
+    "type": "rss",
+    "name": "N+1",
+    "url": "https://nplus1.ru/rss",
+    "logo": "https://nplus1.ru/i/logo.png"
+  },
+  {
+    "type": "rss",
+    "name": "OpenNET",
+    "url": "https://www.opennet.ru/opennews/opennews_all_utf.rss",
+    "logo": "https://www.opennet.ru/opennet_192tg.png"
+  }
+]

@@ -50,6 +50,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@linaria/shaker", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:3.0.0-beta.1"],
             ["@linaria/webpack-loader", "npm:3.0.0-beta.1"],
             ["@pmmmwh/react-refresh-webpack-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:0.4.3"],
+            ["@reatom/babel-plugin", "npm:1.0.0"],
+            ["@reatom/core", "npm:1.1.5"],
+            ["@reatom/react", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.1.4"],
             ["@tinyhttp/app", "npm:1.1.5"],
             ["@types/node", "npm:14.14.16"],
             ["@types/react", "npm:17.0.0"],
@@ -59,6 +62,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["css-loader", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:5.0.1"],
             ["dotenv", "npm:8.2.0"],
             ["html-webpack-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:4.5.0"],
+            ["immer", "npm:8.0.0"],
             ["mini-css-extract-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.3.3"],
             ["nanodi-ts", "npm:0.1.1"],
             ["normalize.css", "npm:8.0.1"],
@@ -2539,6 +2543,50 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "webpack-hot-middleware",
             "webpack-plugin-serve",
             "webpack"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@reatom/babel-plugin", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@reatom-babel-plugin-npm-1.0.0-c7bfc21da2-9ac07cbd05.zip/node_modules/@reatom/babel-plugin/",
+          "packageDependencies": [
+            ["@reatom/babel-plugin", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@reatom/core", [
+        ["npm:1.1.5", {
+          "packageLocation": "./.yarn/cache/@reatom-core-npm-1.1.5-1dc9fee0da-73c455d75e.zip/node_modules/@reatom/core/",
+          "packageDependencies": [
+            ["@reatom/core", "npm:1.1.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@reatom/react", [
+        ["npm:1.1.4", {
+          "packageLocation": "./.yarn/cache/@reatom-react-npm-1.1.4-b3fdcadee7-e0003a68be.zip/node_modules/@reatom/react/",
+          "packageDependencies": [
+            ["@reatom/react", "npm:1.1.4"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.1.4", {
+          "packageLocation": "./.yarn/$$virtual/@reatom-react-virtual-d36319ac08/0/cache/@reatom-react-npm-1.1.4-b3fdcadee7-e0003a68be.zip/node_modules/@reatom/react/",
+          "packageDependencies": [
+            ["@reatom/react", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.1.4"],
+            ["@reatom/core", "npm:1.1.5"],
+            ["@types/react", "npm:17.0.0"],
+            ["@types/reatom__core", null],
+            ["react", "npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@reatom/core",
+            "@types/react",
+            "@types/reatom__core",
+            "react"
           ],
           "linkType": "HARD",
         }]
@@ -6292,6 +6340,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["immer", [
+        ["npm:8.0.0", {
+          "packageLocation": "./.yarn/cache/immer-npm-8.0.0-d9791e8606-99ef306c81.zip/node_modules/immer/",
+          "packageDependencies": [
+            ["immer", "npm:8.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["import-fresh", [
         ["npm:2.0.0", {
           "packageLocation": "./.yarn/cache/import-fresh-npm-2.0.0-8b4e6073aa-c95204ecfb.zip/node_modules/import-fresh/",
@@ -8925,6 +8982,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@linaria/shaker", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:3.0.0-beta.1"],
             ["@linaria/webpack-loader", "npm:3.0.0-beta.1"],
             ["@pmmmwh/react-refresh-webpack-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:0.4.3"],
+            ["@reatom/babel-plugin", "npm:1.0.0"],
+            ["@reatom/core", "npm:1.1.5"],
+            ["@reatom/react", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.1.4"],
             ["@tinyhttp/app", "npm:1.1.5"],
             ["@types/node", "npm:14.14.16"],
             ["@types/react", "npm:17.0.0"],
@@ -8934,6 +8994,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["css-loader", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:5.0.1"],
             ["dotenv", "npm:8.2.0"],
             ["html-webpack-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:4.5.0"],
+            ["immer", "npm:8.0.0"],
             ["mini-css-extract-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.3.3"],
             ["nanodi-ts", "npm:0.1.1"],
             ["normalize.css", "npm:8.0.1"],

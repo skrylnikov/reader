@@ -1,8 +1,6 @@
-import {  } from 'react-dom';
-
-console.log('hello world');
 import React from 'react';
 import { render } from 'react-dom';
+import 'normalize.css';
 
 import { App } from './features/app/component';
 

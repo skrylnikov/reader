@@ -2,35 +2,35 @@ import { config } from 'dotenv';
 
 config({path: './.env'});
 
-type IVarType = 'string' | 'number';
+type IVariableType = 'string' | 'number';
 
-type INameToType<T extends IVarType> = T extends 'number' ? number : 
+type INameToType<T extends IVariableType> = T extends 'number' ? number : 
   T extends 'string' ? string : never;
 
-const loadVar = <T extends IVarType = 'string'>(name: string, varType: T): 
+const loadVariable = <T extends IVariableType = 'string'>(name: string, variableType: T): 
   INameToType<T> => {
-  const rawVar = process.env[name];
-  if(!rawVar){
+  const rawVariable = process.env[name];
+  if(!rawVariable){
     throw new Error(`${name} in .env not found`);
   }
 
-  if(varType === 'string'){
-    return rawVar as any;
+  if(variableType === 'string'){
+    return rawVariable as INameToType<T>;
   }
 
-  if(varType === 'number'){
-    const value = Number(rawVar);
+  if(variableType === 'number'){
+    const value = Number(rawVariable);
 
-    if(value.toString() !== rawVar){
+    if(value.toString() !== rawVariable){
       throw new Error(`${name} is not a number`);
     }
 
-    return value as any;
+    return value as INameToType<T>;
   }
-  throw new Error(`${varType} not supported`);
+  throw new Error(`${variableType} not supported`);
 }
 
 
 export const httpConfig = {
-  post:  loadVar('HTTP_PORT', 'number'),
-};
+post:  loadVariable('HTTP_PORT', 'number'),
+}

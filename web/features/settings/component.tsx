@@ -8,7 +8,7 @@ import { CloseSettings } from './actions';
 import { SettingsAtom } from './atoms';
 import { Wrapper, Header, Close } from './style';
 
-export const Settings = () => {
+export const Settings = (): JSX.Element | null => {
   const { open } = useAtom(SettingsAtom);
   const sourceList = useAtom(SourceListAtom);
   const close = useAction(CloseSettings);

@@ -7,8 +7,8 @@ export const findAllService: IFindAllPort = async(): Promise<ISource[]> => {
     const sourceList = await Source.findAll();
 
     return sourceList.map((x) => x.get());
-  } catch (e) {
-    console.error(e);
+  } catch (error) {
+    console.error(error);
     return [];
   }
 };

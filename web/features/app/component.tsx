@@ -9,7 +9,7 @@ import { Settings } from '../settings';
 
 import { Theme, Wrapper, Header, Menu as MenuWrapper, Main, Other, Footer } from './style';
 
-export const App = () => {
+export const App = (): JSX.Element => {
   return (
     <Provider value={store}>
     <Theme>

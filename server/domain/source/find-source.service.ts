@@ -11,8 +11,8 @@ export const findSourceByNameService: IFindSourceByName = async(name: string): P
     }
 
     return source.get();
-  } catch (e) {
-    console.error(e);
+  } catch (error) {
+    console.error(error);
     return null;
   }
 };

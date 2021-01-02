@@ -28,7 +28,7 @@ fetcher.handle(200, (data) =>{
 
 fetcher.discardRest(() => []);
 
-export const getSourceList = async () => {
+export const getSourceList = async (): Promise<ISource[]> => {
   const [result, errors] = await fetcher.run();
   
   if(option.isSome(errors)){

@@ -5,7 +5,7 @@ import { OpenSettings } from '../settings';
 
 import { Wrapper, Item } from './style';
 
-export const Menu = () => {
+export const Menu = (): JSX.Element => {
   const openSettings = useAction(OpenSettings);
 
 

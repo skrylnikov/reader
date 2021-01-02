@@ -4,7 +4,7 @@ import React from 'react';
 import { Wrapper } from './style';
 
 
-export const Feed = () => {
+export const Feed = (): JSX.Element => {
 
   return (
     <Wrapper>

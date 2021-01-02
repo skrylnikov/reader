@@ -13,5 +13,6 @@
       "database": "${workspaceFolder:reader}/data/database.sqlite"
     }
   ],
-  "sqltools.useNodeRuntime": true
+  "sqltools.useNodeRuntime": true,
+  "eslint.nodePath": ".yarn/sdks"
 }

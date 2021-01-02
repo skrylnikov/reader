@@ -1,18 +1,18 @@
 import React from 'react';
 import { useAction } from '@reatom/react';
 
-import { openSettings } from '../settings';
+import { OpenSettings } from '../settings';
 
 import { Wrapper, Item } from './style';
 
 export const Menu = () => {
-  const openSettingsHandler = useAction(openSettings);
+  const openSettings = useAction(OpenSettings);
 
 
   return (
     <Wrapper>
       <Item>Feed</Item>
-      <Item onClick={openSettingsHandler}>Setting</Item>
+      <Item onClick={openSettings}>Setting</Item>
     </Wrapper>
   );
 };

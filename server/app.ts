@@ -7,9 +7,6 @@ import { rootController } from './controllers';
 
 const app = new App();
 
-// app.use((req, res) => {
-//   res.send('hello world');
-// });
 
 app.use('/api', rootController);
 

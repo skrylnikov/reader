@@ -2981,6 +2981,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cross-fetch@npm:^3.0.6":
+  version: 3.0.6
+  resolution: "cross-fetch@npm:3.0.6"
+  dependencies:
+    node-fetch: 2.6.1
+  checksum: a491ad1b89988a351f8b8b252b68a5e653636d911042648c43a806cf7575ff043379a80d6269102ca60ec633af0b49ca4c83536007793bb0e65e491769f70d9d
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^6.0.0":
   version: 6.0.5
   resolution: "cross-spawn@npm:6.0.5"
@@ -3973,6 +3982,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fetcher-ts@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "fetcher-ts@npm:1.1.1"
+  peerDependencies:
+    cross-fetch: ^3.0.4
+    fp-ts: ^2.3.1
+    io-ts: ^2.0.2
+  checksum: a2bedf3ea0eeadd02e88a7c9ff862446065e7ae3e00947aaae7b96b15e19eada33b95af8dbcccdb8012bff653e14448b67abb026d40f77a75f6f9ea4096f02ee
+  languageName: node
+  linkType: hard
+
 "file-uri-to-path@npm:1.0.0":
   version: 1.0.0
   resolution: "file-uri-to-path@npm:1.0.0"
@@ -4115,6 +4135,13 @@ __metadata:
   version: 0.1.2
   resolution: "forwarded@npm:0.1.2"
   checksum: 568d862ad1c514813fc62dc1bd58b8669b16d4ee2e634a6fc71f4849df798883ab94e63d8e1b35a17af51b2b39ca869e672c7310efe42fc7b9bad43a80b5ff87
+  languageName: node
+  linkType: hard
+
+"fp-ts@npm:^2.9.3":
+  version: 2.9.3
+  resolution: "fp-ts@npm:2.9.3"
+  checksum: d32ea0a319fa50f8760aabf455da4d633f3736cec284b44fc11ba28362a9b51912a15c5ffea415f31f04bbedddd009b15e4547d8b67cda171a43c59c033497c1
   languageName: node
   linkType: hard
 
@@ -4801,6 +4828,15 @@ fsevents@~2.1.2:
   version: 2.2.0
   resolution: "interpret@npm:2.2.0"
   checksum: c89b6aa67f6957ab57e3f12c406043ea6a8a00bfd4b36bdb914080a973574bee40e25afc0b162bcab9793e39744c90cc03e23150a79ad6a4b9ea31291a23ced4
+  languageName: node
+  linkType: hard
+
+"io-ts@npm:^2.2.13":
+  version: 2.2.13
+  resolution: "io-ts@npm:2.2.13"
+  peerDependencies:
+    fp-ts: ^2.0.0
+  checksum: 93265e16eaafe56bbb4a8789d9a8fecb0b22c2e55c917c3c0f5c55de20bbe2ff27e5bc1718d615bb892c01c397edcc7907babbc1e7571e3fc169bb30032f6da5
   languageName: node
   linkType: hard
 
@@ -6004,6 +6040,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"node-fetch@npm:2.6.1":
+  version: 2.6.1
+  resolution: "node-fetch@npm:2.6.1"
+  checksum: cbb171635e538162b977eac5dfe7a1e07a9a02e991924377a6435502291e2f823d306b95aabc455caebf4a118ccf836868462bc70ccc3095af02bb9da61fda37
+  languageName: node
+  linkType: hard
+
 "node-forge@npm:^0.10.0":
   version: 0.10.0
   resolution: "node-forge@npm:0.10.0"
@@ -7041,10 +7084,14 @@ fsevents@~2.1.2:
     "@types/react-dom": ^17.0.0
     "@types/validator": ^13.1.2
     babel-loader: ^8.2.2
+    cross-fetch: ^3.0.6
     css-loader: ^5.0.1
     dotenv: ^8.2.0
+    fetcher-ts: ^1.1.1
+    fp-ts: ^2.9.3
     html-webpack-plugin: ^4.5.0
     immer: ^8.0.0
+    io-ts: ^2.2.13
     mini-css-extract-plugin: ^1.3.3
     nanodi-ts: ^0.1.1
     normalize.css: ^8.0.1

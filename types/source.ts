@@ -2,8 +2,8 @@ export interface IRSSSource {
   type: 'rss';
   url: string;
   name: string;
-  id: string;
+  id: number;
   logo: string;
 }
 
-export type ISourceType = IRSSSource;
+export type ISource = IRSSSource;

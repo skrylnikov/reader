@@ -59,10 +59,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.0"],
             ["@types/validator", "npm:13.1.2"],
             ["babel-loader", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:8.2.2"],
+            ["cross-fetch", "npm:3.0.6"],
             ["css-loader", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:5.0.1"],
             ["dotenv", "npm:8.2.0"],
+            ["fetcher-ts", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.1.1"],
+            ["fp-ts", "npm:2.9.3"],
             ["html-webpack-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:4.5.0"],
             ["immer", "npm:8.0.0"],
+            ["io-ts", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:2.2.13"],
             ["mini-css-extract-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.3.3"],
             ["nanodi-ts", "npm:0.1.1"],
             ["normalize.css", "npm:8.0.1"],
@@ -4391,6 +4395,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["cross-fetch", [
+        ["npm:3.0.6", {
+          "packageLocation": "./.yarn/cache/cross-fetch-npm-3.0.6-6e1e683a4e-a491ad1b89.zip/node_modules/cross-fetch/",
+          "packageDependencies": [
+            ["cross-fetch", "npm:3.0.6"],
+            ["node-fetch", "npm:2.6.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["cross-spawn", [
         ["npm:6.0.5", {
           "packageLocation": "./.yarn/cache/cross-spawn-npm-6.0.5-2deab6c280-05fbbf957d.zip/node_modules/cross-spawn/",
@@ -5542,6 +5556,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["fetcher-ts", [
+        ["npm:1.1.1", {
+          "packageLocation": "./.yarn/cache/fetcher-ts-npm-1.1.1-0ebfac8bc5-a2bedf3ea0.zip/node_modules/fetcher-ts/",
+          "packageDependencies": [
+            ["fetcher-ts", "npm:1.1.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.1.1", {
+          "packageLocation": "./.yarn/$$virtual/fetcher-ts-virtual-39bdca56c4/0/cache/fetcher-ts-npm-1.1.1-0ebfac8bc5-a2bedf3ea0.zip/node_modules/fetcher-ts/",
+          "packageDependencies": [
+            ["fetcher-ts", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.1.1"],
+            ["@types/cross-fetch", null],
+            ["@types/fp-ts", null],
+            ["@types/io-ts", null],
+            ["cross-fetch", "npm:3.0.6"],
+            ["fp-ts", "npm:2.9.3"],
+            ["io-ts", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:2.2.13"]
+          ],
+          "packagePeers": [
+            "@types/cross-fetch",
+            "@types/fp-ts",
+            "@types/io-ts",
+            "cross-fetch",
+            "fp-ts",
+            "io-ts"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["file-uri-to-path", [
         ["npm:1.0.0", {
           "packageLocation": "./.yarn/cache/file-uri-to-path-npm-1.0.0-1043ac6206-5ddb9682f0.zip/node_modules/file-uri-to-path/",
@@ -5703,6 +5747,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/forwarded-npm-0.1.2-6143c1ba42-568d862ad1.zip/node_modules/forwarded/",
           "packageDependencies": [
             ["forwarded", "npm:0.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fp-ts", [
+        ["npm:2.9.3", {
+          "packageLocation": "./.yarn/cache/fp-ts-npm-2.9.3-600235b229-d32ea0a319.zip/node_modules/fp-ts/",
+          "packageDependencies": [
+            ["fp-ts", "npm:2.9.3"]
           ],
           "linkType": "HARD",
         }]
@@ -6460,6 +6513,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/interpret-npm-2.2.0-3603a544e1-c89b6aa67f.zip/node_modules/interpret/",
           "packageDependencies": [
             ["interpret", "npm:2.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["io-ts", [
+        ["npm:2.2.13", {
+          "packageLocation": "./.yarn/cache/io-ts-npm-2.2.13-df9c340e6c-93265e16ea.zip/node_modules/io-ts/",
+          "packageDependencies": [
+            ["io-ts", "npm:2.2.13"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:2.2.13", {
+          "packageLocation": "./.yarn/$$virtual/io-ts-virtual-1254391c08/0/cache/io-ts-npm-2.2.13-df9c340e6c-93265e16ea.zip/node_modules/io-ts/",
+          "packageDependencies": [
+            ["io-ts", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:2.2.13"],
+            ["@types/fp-ts", null],
+            ["fp-ts", "npm:2.9.3"]
+          ],
+          "packagePeers": [
+            "@types/fp-ts",
+            "fp-ts"
           ],
           "linkType": "HARD",
         }]
@@ -7790,6 +7865,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["node-fetch", [
+        ["npm:2.6.1", {
+          "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.1-46c670dbc1-cbb171635e.zip/node_modules/node-fetch/",
+          "packageDependencies": [
+            ["node-fetch", "npm:2.6.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["node-forge", [
         ["npm:0.10.0", {
           "packageLocation": "./.yarn/cache/node-forge-npm-0.10.0-605ba7b28b-c7a729933a.zip/node_modules/node-forge/",
@@ -8991,10 +9075,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.0"],
             ["@types/validator", "npm:13.1.2"],
             ["babel-loader", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:8.2.2"],
+            ["cross-fetch", "npm:3.0.6"],
             ["css-loader", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:5.0.1"],
             ["dotenv", "npm:8.2.0"],
+            ["fetcher-ts", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.1.1"],
+            ["fp-ts", "npm:2.9.3"],
             ["html-webpack-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:4.5.0"],
             ["immer", "npm:8.0.0"],
+            ["io-ts", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:2.2.13"],
             ["mini-css-extract-plugin", "virtual:b12256fdcc0790025b9c91efc49524e92c0536a2b1f893a604ce2da6087b33292dd8404b6bbef9bfc848ae9d6f0538b76ae411f9f14540dee3107c41258bbc8b#npm:1.3.3"],
             ["nanodi-ts", "npm:0.1.1"],
             ["normalize.css", "npm:8.0.1"],

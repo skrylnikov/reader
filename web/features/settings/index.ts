@@ -1,3 +1,3 @@
 export * from './actions';
 export * from './component';
-export * from './service';
+export * from '../source/service';

@@ -1,5 +1,7 @@
 import { declareAction } from '@reatom/core';
 
-export const openSettings = declareAction();
+import { LoadSourceList } from '../source';
 
-export const closeSettings = declareAction();
+export const OpenSettings = declareAction((_, {dispatch})=> dispatch(LoadSourceList()));
+
+export const CloseSettings = declareAction();

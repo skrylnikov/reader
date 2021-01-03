@@ -37,7 +37,8 @@
     "unicorn/prevent-abbreviations": ["error", {
       "whitelist": {
         "req": true,
-        "res": true
+        "res": true,
+        "IProps": true
       }
     }]
   }

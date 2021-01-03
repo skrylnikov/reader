@@ -2,10 +2,10 @@ import { styled } from '@linaria/react';
 
 export const Wrapper = styled.div`
   position: absolute;
-  width: 60em;
+  width: 30em;
   height: 20em;
   top: calc(50vh - 10em);
-  left: calc(50vw - 30em);
+  left: calc(50vw - 15em);
   background: var(--main-background);
   border: 1px solid gray;
   border-radius: 2px;

@@ -4,6 +4,7 @@ import { option } from 'fp-ts';
 
 import { SourceListAtom } from '../source';
 
+import { Source } from './source';
 import { CloseSettings } from './actions';
 import { SettingsAtom } from './atoms';
 import { Wrapper, Header, Close } from './style';
@@ -23,8 +24,11 @@ export const Settings = (): JSX.Element | null => {
         <h3>Settings</h3>
         <Close onClick={close}>Close</Close>
       </Header>
-      {option.isNone(sourceList) && (<p>Loading...</p>)}
-      {option.isSome(sourceList) && sourceList.value.map((x) => (<p key={x.id}>{x.name}</p>))}
+      {option.isSome(sourceList) 
+        ? sourceList.value.map((x) => (
+        <Source key={x.id} id={x.id} name={x.name} logo={x.logo}/>
+        ))
+        : (<p>Loading...</p>)}
     </Wrapper>
   );
 }

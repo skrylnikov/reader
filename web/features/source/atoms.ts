@@ -4,6 +4,8 @@ import { produce } from 'immer';
 
 import { ISource } from '../../../types/source';
 
+import { getValue } from '../../shared/local-storage';
+
 import {
   LoadSourceList,
   SetSourceList,
@@ -16,7 +18,7 @@ export const SourceListAtom = declareAtom<option.Option<ISource[]>>(option.none,
   on(SetSourceList, (_, payload) => option.some(payload)),
 ]);
 
-export const SubscribedSourceSetAtom = declareAtom<Set<number>>(new Set(), (on) => [
+export const SubscribedSourceSetAtom = declareAtom<Set<number>>(new Set(getValue<number[]>('SubscribedSourceSet', [])), (on) => [
   on(SuscribeToSource, (state, id) => produce(state, (draft) => {
     draft.add(id);
   })),
